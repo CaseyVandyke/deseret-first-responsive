@@ -84,7 +84,7 @@ body {
 
 .main-image-container {
   text-align: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
 }
@@ -96,6 +96,10 @@ body {
 }
 
 /* Promo Section */
+
+.promo-section {
+  margin: 30px;
+}
 
 .promo-container {
   color: #002f6c;
@@ -112,6 +116,31 @@ body {
   font-size: 20px;
 }
 
+/* Auto Section */
+
+.vehicle-intro {
+  padding-bottom: 30px;
+}
+.auto-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+.vehicle-image {
+  height: 200px;
+  margin: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.vehicle-image:hover {
+  transform: scale(1.1);
+}
+
+.vehicle-type {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
 /* Footer Section */
 
 .footer-info {
@@ -122,8 +151,10 @@ body {
 
 .footer-section {
   padding: 10px;
+  margin-bottom: 20px;
   border-right: 1px solid #002f6c;
-  width: 25%;
+  width: 33.333%;
+  text-align: center;
 }
 
 .useful-links {
@@ -134,13 +165,26 @@ body {
 }
 
 .footer-title {
+  padding-bottom: 10px;
+}
+
+.social-icon {
   text-align: center;
-  padding-bottom: 30px;
 }
 
 i {
   color: #002f6c;
   padding: 10px;
+  text-align: center;
+}
+
+.connect-message {
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 /* Media Queries */
@@ -172,11 +216,35 @@ i {
   .navbar-toggle {
     display: none;
   }
-  .logo:hover,
   .main-links:hover {
     background-color: #002f6c;
     color: #fff;
     border-radius: 2px;
     transition: all 0.4s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .theme-statement {
+    font-size: 30px;
+  }
+  .promo-container h2 {
+    font-size: 25px;
+  }
+  .promo-container p {
+    font-size: 17px;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .auto-type {
+    display: block;
+  }
+  .auto-center {
+    text-align: center;
+  }
+  .vehicle-image {
+    height: 250px;
   }
 }
