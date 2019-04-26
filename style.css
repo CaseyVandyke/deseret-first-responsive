@@ -116,6 +116,10 @@ body {
   font-size: 20px;
 }
 
+.promo-container .disclosure {
+  font-size: 14px;
+}
+
 /* Auto Section */
 
 .vehicle-intro {
